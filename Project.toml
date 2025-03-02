@@ -1,0 +1,13 @@
+name = "LLVMLibunwind_jll"
+uuid = "871c935c-5660-55ad-bb68-d1283357316b"
+version = "17.0.0"
+
+[deps]
+Zlib_jll = "83775a58-1f1d-513f-b197-d71354ab007a"
+Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
+LazyJLLWrappers = "21706172-204c-4d4f-5420-656854206f44"
+Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+
+[compat]
+julia = "1.6"
+LazyJLLWrappers = "1.0.0"
