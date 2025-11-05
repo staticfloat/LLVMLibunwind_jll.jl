@@ -1,6 +1,6 @@
 name = "LLVMLibunwind_jll"
 uuid = "871c935c-5660-55ad-bb68-d1283357316b"
-version = "17.0.1"
+version = "17.0.0"
 
 [deps]
 Zlib_jll = "83775a58-1f1d-513f-b197-d71354ab007a"
