@@ -8,8 +8,8 @@ For more details about JLL packages and how to use them, see the `BinaryBuilder.
 The binaries for `LLVMLibunwind` have been built from upstream sources version v17.0.6:
 
  - [https://github.com/llvm/llvm-project.git](https://github.com/llvm/llvm-project.git) (treehash: sha1:6009708b4367171ccdbf4b5905cb6a803753fe18)
- - [/home/sabae/src/BB2/bootstrap/LLVM/bundled](/home/sabae/src/BB2/bootstrap/LLVM/bundled) (treehash: sha1:46e08577885fa9994bb9b73bb42738aa6fc34298)
- - [/home/sabae/src/BB2/bootstrap/LLVM/patches/v17.0.6](/home/sabae/src/BB2/bootstrap/LLVM/patches/v17.0.6) (treehash: sha1:d472d2a50ae0defb412bcb0f8b937cd142e9dfcf)
+ - [/home/sabae/src/experiments/BB2-compiler-toolchains-transfer/worktrees/BinaryBuilder2.jl-msan/bootstrap/LLVM/bundled](/home/sabae/src/experiments/BB2-compiler-toolchains-transfer/worktrees/BinaryBuilder2.jl-msan/bootstrap/LLVM/bundled) (treehash: sha1:46e08577885fa9994bb9b73bb42738aa6fc34298)
+ - [/home/sabae/src/experiments/BB2-compiler-toolchains-transfer/worktrees/BinaryBuilder2.jl-msan/bootstrap/LLVM/patches/v17.0.6](/home/sabae/src/experiments/BB2-compiler-toolchains-transfer/worktrees/BinaryBuilder2.jl-msan/bootstrap/LLVM/patches/v17.0.6) (treehash: sha1:d472d2a50ae0defb412bcb0f8b937cd142e9dfcf)
 # Platforms
 
 `LLVMLibunwind` is available for the following platforms:
@@ -25,16 +25,16 @@ The binaries for `LLVMLibunwind` have been built from upstream sources version v
  - `Platform("aarch64", "linux"; libc = "musl")`
  - `Platform("armv6l", "linux"; call_abi = "eabihf", libc = "musl")`
  - `Platform("armv7l", "linux"; call_abi = "eabihf", libc = "musl")`
- - `Platform("x86_64", "windows"; )`
- - `Platform("i686", "windows"; )`
+ - `Platform("x86_64", "windows"; libc = "msvcrt")`
+ - `Platform("i686", "windows"; libc = "msvcrt")`
  - `Platform("x86_64", "macos"; os_version = "20.0.0")`
  - `Platform("aarch64", "macos"; os_version = "20.0.0")`
  - `Platform("x86_64", "freebsd"; os_version = "14.1.0")`
  - `Platform("aarch64", "freebsd"; os_version = "14.1.0")`
+ - `Platform("x86_64", "linux"; libc = "glibc", sanitize = "memory")`
 # Dependencies
 The following JLL packages are required by `LLVMLibunwind`:
 
- - `Zlib_jll`
 # Products
 
 The code bindings within this package are generated to wrap the following `Product`s:
